@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <h1 class="board">My Task Board</h1>
+    <div class="boardTask">
+      <form >
+        <input type="text" id="inputTasks" required placeholder="write task"  >
+        <input type="date" id="inputDate"  required />
+        <input type="time" id="inputTime"  required />
+    <button type="button" class="btn_save">Save</button>
+    <button type="button" class="btn_clear">Clear</button>
+    <div class="select">
+      <label for="cars">Filter status task: </label>
+      <select name="todos" class="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </div>
+  </form>
+</div>
+<div class="containerElements"></div>
+<div class="message"></div>
+<div class="task-text"></div>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body{
+    background-image: url("images/board.jpg");
+    text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.board{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.boardTask{
+    background-image: url("images/tasks.jpg");
+    padding: 25px 50px 75px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.noteDiv {
+    animation: animate1 2s  forwards ease-in; 
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    margin: 15px 20px 15px;
+    padding: 5px;
+    font-size:medium;
+    float: left;
+    background-image: url("images/note.jpg") ;
+    color: black;
+}
+@keyframes animate1
+{
+    0% {opacity :0}
+    100% {opacity :1}
+}
+
+.noteDiv:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  .message{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: red; 
+    font-weight: bold;
+    }
+
+  .todo {
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    transition: all 1s ease;
+  }
+  .filter-todo {
+    padding: 1rem;
+    width: 150px;
+    height: 50px;
+    box-sizing: 10px;
+      }
+  .trash-btn,
+  .complete-btn,
+  .edit-btn
+   {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 0.5rem;
+
+  }
+  .complete-btn {
+    background: rgb(11, 212, 162);
+  }
+
+  .edit-btn{
+  background: rgb(67, 113, 155);
+}
+  .fa-trash,
+  .fa-check,
+  .fa-pen
+  {
+    pointer-events: none;
+  }
+  
+  .fall {
+
+    display: none; 
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+
+  }
+   
+  textarea {
+    padding: 5px;
+    margin-top: 30px ;
+    margin-right: 20px;
+    border-color: #4CAF50; 
+    outline: none; 
+    box-shadow: 0 0 1ch rgba(198, 247, 199, 0.5); 
+    
+  }
+  
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #ff6f47;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+
